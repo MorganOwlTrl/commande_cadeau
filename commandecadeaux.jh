@@ -1,27 +1,22 @@
 
 entity Article {
 	designation String,
-    stock Int,
-    nbPoints Int,
+    stock Integer,
+    nbPoints Integer,
     description String,
     
 }
 
 entity Categorie {
-	countryName String
+	nom String
 }
 
-entity Commande {
-
-}
 
 
 relationship OneToMany {
-	Article to Categorie{categorie},
-    Commande to Article{article}
+	Article to Categorie{categorie}
 }
 
 relationship ManyToOne {
-	Categorie{categorie} to Article,
-    Article{article} to Commande
+	Categorie{categorie} to Article
 }

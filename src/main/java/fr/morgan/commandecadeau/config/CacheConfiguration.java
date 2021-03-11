@@ -49,6 +49,9 @@ public class CacheConfiguration {
             createCache(cm, fr.morgan.commandecadeau.domain.User.class.getName() + ".authorities");
             createCache(cm, fr.morgan.commandecadeau.domain.PersistentToken.class.getName());
             createCache(cm, fr.morgan.commandecadeau.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, fr.morgan.commandecadeau.domain.Article.class.getName());
+            createCache(cm, fr.morgan.commandecadeau.domain.Article.class.getName() + ".categories");
+            createCache(cm, fr.morgan.commandecadeau.domain.Categorie.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
