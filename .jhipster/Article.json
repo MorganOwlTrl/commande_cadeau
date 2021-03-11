@@ -1,0 +1,40 @@
+{
+  "name": "Article",
+  "fields": [
+    {
+      "fieldName": "designation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stock",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nbPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "categorie",
+      "otherEntityRelationshipName": "categorie",
+      "relationshipName": "categorie"
+    }
+  ],
+  "changelogDate": "20210311153507",
+  "entityTableName": "article",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
